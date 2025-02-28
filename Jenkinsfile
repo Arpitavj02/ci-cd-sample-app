@@ -4,7 +4,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 git branch: 'main', url: 'https://github.com/Arpitavj02/ci-cd-sample-app.git'
-          }
+            }
         }
         stage('Build Docker Image') {
             steps {
@@ -18,3 +18,4 @@ pipeline {
         }
     }
 }
+
